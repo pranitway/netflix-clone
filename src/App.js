@@ -1,9 +1,5 @@
 import "./App.css";
 
-// import "mdbootstrap/css/bootstrap.min.css";
-
-// import "mdbootstrap/js/bootstrap.js";
-// import "bootstrap-icons/font/bootstrap-icons.css";
 import { Route, Routes, Navigate } from "react-router-dom";
 import { useState } from "react";
 import Home from "./components/Home";
@@ -25,8 +21,6 @@ const persistor = persistStore(store);
 
 function App() {
     // let [latestMovies, setLatestMov] = useState({});
-
-    // function loadData() {}
 
     // useEffect();
     let [page, setPage] = useState({

@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { imgNotAvail } from "./imgNotAvail";
-// import { set } from "immer/dist/internal";
 
 const API_KEY = "3e9ea35a5fcdd22c28f994cdeddff43c";
 let SmallImgBaseUrl = "https://image.tmdb.org/t/p/w500/";
@@ -14,13 +13,12 @@ let SmallImgBaseUrl = "https://image.tmdb.org/t/p/w500/";
 const ShowMoviesRow = (props) => {
     let { sec } = props;
     let count = 1;
-    let counter = 0;
+
     let secArr = [sec + count++, sec + count++, sec + count++];
     // console.log("section Array", secArr);
 
     let moviesArr = useSelector((state) => state[props.movieType]);
-    // if (props.movieType === "popularTvShows")
-    //     console.log("popularTvShows", moviesArr);
+
     let [videoLinks, setVideoLinks] = useState({});
 
     // for video links
@@ -34,7 +32,6 @@ const ShowMoviesRow = (props) => {
             } else if (props.type === "tv") {
                 return `https://api.themoviedb.org/3/tv/${movie.id}/videos?api_key=${API_KEY}&language=en-US`;
             }
-            // return `https://api.themoviedb.org/3/movie/${movie.id}/videos?api_key=${API_KEY}&language=en-US`;
         });
 
         let data = axios
@@ -184,7 +181,7 @@ const ShowMoviesRow = (props) => {
                                 >
                                     <div className="modal-content">
                                         <div className="modal-header">
-                                            {/* {videoLinks[movie.id] ? (
+                                            {videoLinks[movie.id] ? (
                                                 <iframe
                                                     width="100%"
                                                     height="315"
@@ -199,8 +196,8 @@ const ShowMoviesRow = (props) => {
                                                 ></iframe>
                                             ) : (
                                                 <h3>Video Not Available</h3>
-                                            )} */}
-                                            <h3>Video Not Available</h3>
+                                            )}
+                                            {/* <h3>Video Not Available</h3> */}
                                             <button
                                                 type="button"
                                                 className="close text-light"
