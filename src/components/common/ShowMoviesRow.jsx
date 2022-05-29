@@ -198,7 +198,7 @@ const ShowMoviesRow = (props) => {
                                                 <h3>Video Not Available</h3>
                                             )}
                                             {/* <h3>Video Not Available</h3> */}
-                                            <button
+                                            {/* <button
                                                 type="button"
                                                 className="close text-light"
                                                 data-dismiss="modal"
@@ -207,7 +207,7 @@ const ShowMoviesRow = (props) => {
                                                 <span aria-hidden="true">
                                                     &times;
                                                 </span>
-                                            </button>
+                                            </button> */}
                                         </div>
                                         <div className="modal-body">
                                             <table className="table table-striped table-dark">
