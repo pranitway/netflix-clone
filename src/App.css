@@ -125,7 +125,7 @@
 
 .logo-text > .title-wrapper > h1 {
     font-weight: bold;
-    font-size: 100px;
+    /* font-size: 100px; */
 }
 
 .billboard-btn-wrap > .btn {

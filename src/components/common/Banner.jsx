@@ -33,7 +33,9 @@ const Banner = () => {
                 <div className="info-banner">
                     <div className="logo-text">
                         <div className="title-wrapper text-light">
-                            <h1>{bannerImgInfo.title || bannerImgInfo.name}</h1>
+                            <h1 className="display-4">
+                                {bannerImgInfo.title || bannerImgInfo.name}
+                            </h1>
                         </div>
                     </div>
                     <div className="info-wrapper text-light">
@@ -86,29 +88,29 @@ const Banner = () => {
             </div>
 
             <div
-                class="modal fade"
+                className="modal fade"
                 // id="exampleModal"
                 id={"_" + bannerImgInfo.id}
-                tabindex="-1"
+                tabIndex="-1"
                 aria-labelledby="exampleModalLabel"
                 aria-hidden="true"
             >
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">
                                 Video Not Available
                             </h5>
                             <button
                                 type="button"
-                                class="close text-light"
+                                className="close text-light"
                                 data-dismiss="modal"
                                 aria-label="Close"
                             >
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <table className="table table-striped table-dark">
                                 <tbody>
                                     <tr>
