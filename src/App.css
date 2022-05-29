@@ -1,0 +1,246 @@
+/* .App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+/* my css */
+
+#root {
+    /* background-color: black; */
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.656);
+    padding: 0 2.5rem;
+    z-index: 1;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 1.5rem;
+    margin-right: 1.2rem;
+}
+
+.logo:hover {
+    color: #e50914;
+    cursor: pointer;
+}
+
+.navbar-in {
+    display: flex;
+}
+
+.navigation-menu {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar-nav > a {
+    color: white;
+}
+
+.navbar-nav > a:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+/* Banner Section */
+.main-view {
+    min-height: 1000px;
+    z-index: 0;
+    margin-top: -70px;
+    position: relative;
+}
+
+.main-view > img {
+    position: absolute;
+    background-size: cover;
+    /* background-position: center center; */
+    width: 100%;
+    height: 95%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: opacity 0.4s cubic-bezier(0.665, 0.235, 0.265, 0.8) 0s;
+}
+
+.main-view > .info-banner {
+    position: absolute;
+    top: 0;
+    bottom: 35%;
+    left: 4%;
+    width: 36%;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    /* justify-content: ; */
+    align-content: end;
+    row-gap: 20px;
+}
+
+.main-view > .info-banner > .logo-text {
+    width: 100%;
+}
+
+.logo-text > .title-wrapper {
+}
+
+.logo-text > .title-wrapper > h1 {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.billboard-btn-wrap > .btn {
+    font-size: 20px;
+    padding-left: 2rem;
+    padding-right: 2.2rem;
+}
+
+.billboard-btn-wrap > .play-btn {
+    background-color: white;
+    margin-right: 1rem;
+}
+
+.billboard-btn-wrap > .info-btn {
+    background-color: rgba(109, 109, 110, 0.4);
+}
+
+.billboard-btn-wrap > .info-btn:hover {
+    color: black !important;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.hero-vignette {
+    width: 100%;
+    height: 14.7vw;
+    bottom: -1px;
+    top: auto;
+    opacity: 1;
+    background-color: transparent;
+    background-size: 100% 100%;
+    background-position: 0 top;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(20, 20, 20, 0) 0,
+        rgba(20, 20, 20, 0.15) 15%,
+        rgba(20, 20, 20, 0.35) 29%,
+        rgba(20, 20, 20, 0.58) 44%,
+        #141414 68%,
+        #141414 100%
+    );
+}
+
+.vignette-layer {
+    /* z-index: 3; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10 !important;
+}
+
+.movie-rows > h4 {
+    /* position: absolute; */
+    margin-left: 60px;
+    color: white;
+    z-index: 100 !important;
+}
+
+/* movie row */
+
+/* Bottom section home page */
+.home-bottom-sec {
+    /* display: grid;
+    grid-template-columns: auto; */
+    /* z-index: 200000 !important; */
+}
+
+.movie-rows {
+    position: relative;
+    z-index: 1 !important;
+    /* background-color: black; */
+}
+
+.modal-backdrop {
+    z-index: -1 !important;
+}
+.modal-open {
+    /* background-color: grey !important; */
+}
+.modal-dialog {
+    background-color: #181818 !important;
+    max-width: 800px !important;
+    /* box-shadow: grey !important; */
+
+    border-radius: 0.5rem !important;
+    overflow: hidden !important;
+    z-index: 10 !important;
+}
+
+.modal-content {
+    background-color: #181818 !important;
+    /* border-radius: 1rem !important; */
+}
+
+.modal-header,
+.modal-body {
+    background-color: #181818 !important;
+    color: white !important;
+}
+
+.modal-header {
+    /* border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; */
+}
+
+/* bottom section */
+
+.home-bottom-sec {
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* top: 900px; */
+    /* background-color: rgba(0, 0, 0, 0.107); */
+    background-color: #181818;
+}
