@@ -24,9 +24,6 @@ const ShowMoviesRow = (props) => {
     let [videoLinks, setVideoLinks] = useState({});
 
     // for video links
-    let movName = moviesArr.slice(0, 15).map((obj) => {
-        return obj.name || obj.title;
-    });
 
     async function loadVideoLinks() {
         let movNameID = moviesArr.slice(0, 15).map((movie) => {
