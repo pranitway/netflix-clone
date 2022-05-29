@@ -1,5 +1,5 @@
 import React from "react";
-// import one from "../assests/some-pics/1.jpg";
+
 import "./carousel.css";
 import _ from "lodash";
 import { useSelector } from "react-redux";

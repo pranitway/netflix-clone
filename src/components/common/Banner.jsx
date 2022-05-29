@@ -1,10 +1,10 @@
 import React from "react";
-import BannerImg from "../assests/trial-banner.jpg";
+// import BannerImg from "../assests/trial-banner.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleExclamation, faPlay } from "@fortawesome/free-solid-svg-icons";
-import ShowMoviesRow from "./ShowMoviesRow";
+// import ShowMoviesRow from "./ShowMoviesRow";
 import { useDispatch, useSelector } from "react-redux";
-import { trendingMovies } from "./../../store/movies";
+
 import { useEffect, useState } from "react";
 
 let imgBaseLink = "https://image.tmdb.org/t/p/original/";
@@ -22,10 +22,8 @@ const Banner = () => {
     // }
 
     useEffect(() => {
-        // bannerImgInfo = movies[randNumb];
         setBannerImgInfo(movies[randNumb]);
     }, []);
-    // console.log("")
 
     return (
         <React.Fragment>

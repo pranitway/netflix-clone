@@ -1,22 +1,6 @@
 import axios from "axios";
 import * as actions from "../movies";
 
-// const actionObj = {
-//     type: "apiCall",
-//     payload: {
-//         url: [
-//             `https://api.themoviedb.org/3/trending/all/week?api_key=3e9ea35a5fcdd22c28f994cdeddff43c`,
-//             `https://api.themoviedb.org/3/tv/popular?api_key=3e9ea35a5fcdd22c28f994cdeddff43c&language=en-US&page=1`,
-//             `https://api.themoviedb.org/3/discover/movie?api_key=3e9ea35a5fcdd22c28f994cdeddff43c&language=en-US&region=in&sort_by=popularity.desc&include_adult=true&include_video=false&page=1&with_genres=35&with_watch_monetization_types=flatrate`,
-//         ],
-
-//         method: "GET",
-//         data: {},
-//         onSuccess: "movies received",
-//         onError: "apiRequestFailed",
-//     },
-// };
-
 const api =
     ({ dispatch, getState }) =>
     (next) =>
@@ -38,7 +22,7 @@ const api =
         axios
             .all(
                 url.map((url) => {
-                    axios.get(url).catch((err) => {
+                    return axios.get(url).catch((err) => {
                         return null;
                     });
                 })
